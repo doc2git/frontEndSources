@@ -1,0 +1,153 @@
+/*
+Theme Name: Kratos Child
+Theme URI: https://www.16bing.com/
+Author: Coldice
+Author URI: https://www.16bing.com/
+Description: 这是我个人基于 Kratos 主题进行定制的子主题。
+Template: Kratos
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 简约, 紧凑, 优雅, 情怀, 多栏, 自适应, 响应式, 小工具, 灵活顶部, 主题选项, 打赏组件, 收录优化, 文章分享, 轮播图片, 邮件功能, 社交组件, 广告栏目, 特色图像, 随动边栏, 嵌套评论, 页脚挂件, 自定义边栏, 自定义颜色, 自定义背景, 自定义布局
+*/
+
+@import url("../Kratos/style.css");
+
+@media screen and (max-width:768px) {
+    #kratos-logo-img {
+        float: none;
+        text-align: left
+    }
+    #kratos-logo-img img {
+        width: 100px
+    }
+}
+
+blockquote {
+    border-left: 5px solid #6CE26C;
+    font-weight: 500;
+}
+
+.kratos-post-content a {
+    color: #51aded;
+}
+.kratos-post-content a:hover {
+    text-decoration: underline;
+}
+.kratos-post-content video {
+	position: relative;
+	width: 100%;
+}
+
+.downbtn {
+    padding: 10px 26px;
+    border: 1px solid #3e92cc;
+    background: #3e92cc;
+    color: #fff!important;
+}
+.downbtn:hover {
+    text-decoration: none!important;
+    background: #3A89C1;
+    color: #fff!important;
+}
+/*页脚微信效果开始*/
+
+a#weixin {
+    position: relative
+}
+
+#weixin img {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0, 10px);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: -30px;
+    bottom: 40px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 15px #51aded;
+    z-index: 99
+}
+
+#weixin:hover img {
+    visibility: visible;
+    transform: translate(0, 0px);
+    opacity: 1
+}
+
+
+/*页脚微信效果结束*/
+
+/*打赏的修改开始*/
+.kratos-entry-footer .post-like-donate .Donate {
+    /* margin-left: 10px; */
+    border-color: #3496e6;
+    color: #3496e6;
+}
+
+.donate-wrap ul {
+    margin-top: 10px;
+    padding: 0;
+}
+.donate-wrap ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #87ddff;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.donate-wrap ul .weixinpay {
+    border-color: #8ae0ac;
+}
+
+@media screen and (min-width:414px){
+.donate-wrap ul li img {
+    width: 120px;
+    height: auto;
+    }}
+
+@media screen and (min-width:375px) and (max-width:414px){
+    .donate-wrap ul li img {
+        width: 100px;
+        height: auto;
+    }
+}
+@media screen and (max-width:375px) {
+    .donate-wrap ul li img {
+        width: 80px;
+        height: auto;
+    }
+}
+/*打赏的修改结束*/
+
+/*表格开始*/
+.kratos-post-content th {
+    background: #f1f1f1;
+}
+.kratos-post-content table, .kratos-post-content td, .kratos-post-content th {
+    text-align: center!important;
+    border: 1px solid #ddd;
+    color: #666;
+}
+/*表格结束*/
+
+/*屏幕宽度低于 768px，使其去掉 padding 开始*/
+@media screen and (max-width: 768px) {
+    .col-md-8 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .kratos-entry-thumb-new img {
+        height: 56.25vw;
+        max-width: 100%;
+        width: 750px;
+        padding: 0;
+        border: 0;
+    }
+}
+/*屏幕宽度低于 768px，使其去掉 padding 结束*/
